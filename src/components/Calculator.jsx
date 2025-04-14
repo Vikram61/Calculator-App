@@ -10,11 +10,18 @@ const Calculator = () => {
 
         if(event==="="){
             try{
-                const evalResult=eval(expression)
-                setResult(evalResult.toString())
+                if (!expression.trim()) {
+                    setResult('');
+                    return;
+                  }
+    
+                  const sanitized = expression.replace(/^0+(?!\.)/, '');
+                  
+                  const evalResult = eval(sanitized);
+                  setResult(evalResult.toString());
             }
             catch(error){
-                setResult(error)
+                setResult('error')
             }
         }else if(event==='C'){
             setExpression('')
