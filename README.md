@@ -3,6 +3,7 @@ This is a simple and interactive calculator built using React. It performs basic
 Link = https://calculator-app-beta-bay.vercel.app/
 
 ✨ Features
+
 Perform basic operations: +, -, *, /, %
 
 Supports decimal inputs
