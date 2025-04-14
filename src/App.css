@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
